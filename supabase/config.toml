@@ -1,0 +1,4 @@
+project_id = "rackvira"
+
+[functions.shop-account]
+verify_jwt = false

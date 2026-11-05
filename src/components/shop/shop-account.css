@@ -1,0 +1,1043 @@
+.nv-shop-account {
+  --nv-surface: #fff;
+  background: #f5f7fb;
+  min-height: 100dvh;
+  padding-bottom: 0 !important;
+  font-size: 13px;
+}
+.nv-shop-account-preview {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff1d1;
+  color: #89621f;
+  padding: 13px 20px;
+  font-size: 11px;
+}
+.nv-shop-account-preview a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.nv-shop-account-header {
+  position: sticky;
+  top: 0;
+  z-index: 35;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-bottom: 1px solid var(--nv-line);
+  background: var(--nv-surface);
+  padding: 19px 35px;
+}
+.nv-shop-account-logo {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.nv-shop-account-logo img {
+  width: 145px;
+  height: auto;
+}
+.nv-shop-account-logo > span {
+  font-size: 12px;
+  color: #658579;
+  border-inline-start: 1px solid var(--nv-line);
+  padding-inline-start: 20px;
+}
+.nv-shop-account-header > div {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.nv-shop-account-browse {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #36776d;
+  font-size: 12px;
+}
+.nv-shop-account-layout {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+.nv-shop-account-sidebar {
+  background: var(--nv-surface);
+  border: 1px solid var(--nv-line);
+  border-radius: 23px;
+  padding: 20px 13px;
+  position: sticky;
+  top: 110px;
+  max-height: calc(100dvh - 135px);
+  overflow-y: auto;
+  align-self: start;
+  overscroll-behavior: contain;
+}
+.nv-shop-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 23px;
+  border-bottom: 1px solid var(--nv-line);
+  gap: 8px;
+}
+.nv-shop-identity > span {
+  border-radius: 17px;
+  background: #e8f4ee;
+  color: #37917c;
+  padding: 13px;
+}
+.nv-shop-identity > strong {
+  font-size: 15px;
+}
+.nv-shop-identity > small {
+  color: var(--nv-muted);
+  font-size: 10px;
+}
+.nv-shop-account-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-block: 20px;
+}
+.nv-shop-account-sidebar nav > button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 45px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-align: start;
+  color: #6b7f94;
+}
+.nv-shop-account-sidebar nav > button[aria-current="page"] {
+  background: linear-gradient(110deg, #e1f2ed, #f0f8f4);
+  color: #147160;
+  font-weight: 750;
+}
+.nv-shop-space-note {
+  background: var(--nv-wash);
+  border: 1px solid var(--nv-line);
+  border-radius: 15px;
+  margin: 20px 3px;
+  padding: 18px;
+}
+.nv-shop-space-note > svg {
+  color: #6586ae;
+  margin-bottom: 10px;
+}
+.nv-shop-space-note strong {
+  font-size: 11px;
+  line-height: 1.8;
+  display: block;
+}
+.nv-shop-space-note p {
+  font-size: 10px;
+  line-height: 1.9;
+  color: var(--nv-muted);
+  margin-top: 7px;
+}
+.nv-shop-space-note a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 13px;
+  color: #3f77b6;
+  font-size: 10px;
+}
+.nv-shop-signout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #b86472;
+  padding: 10px 15px;
+  font-size: 11px;
+}
+.nv-shop-account-main {
+  min-width: 0;
+  padding: 10px 0 40px;
+}
+.nv-shop-account-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.nv-shop-account-title > div > span {
+  font-size: 10px;
+  color: #7990aa;
+  letter-spacing: 0.8px;
+}
+.nv-shop-account-title h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 8px;
+  line-height: 1.7;
+}
+.nv-shop-account-title p {
+  font-size: 12px;
+  color: var(--nv-muted);
+  margin-top: 8px;
+}
+.nv-shop-account-title .nv-back-button {
+  flex-shrink: 0;
+  background: var(--nv-surface);
+}
+.nv-shop-account-welcome {
+  border-radius: 24px;
+  background:
+    radial-gradient(ellipse at 0 100%, #335c65, transparent 60%),
+    linear-gradient(120deg, #103b39, #183f50);
+  padding: 35px 40px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.nv-shop-account-welcome .nv-eyebrow {
+  color: #8ddac5;
+  font-size: 11px;
+  letter-spacing: 0;
+}
+.nv-shop-account-welcome h2 {
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1.8;
+}
+.nv-shop-account-welcome p {
+  font-size: 12px;
+  line-height: 2;
+  color: #b2d4cd;
+  margin-block: 12px 23px;
+}
+.nv-shop-account-welcome .nv-button {
+  font-size: 12px;
+  background: #e4f5ed;
+  color: #205f50;
+  border-color: #e4f5ed;
+  box-shadow: none;
+}
+.nv-shop-welcome-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 170px;
+  color: #9dddc9;
+  border: 1px dashed #9dddc933;
+  border-radius: 50%;
+  transform: rotate(-15deg);
+}
+.nv-shop-welcome-art > svg:first-child {
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 15px 25px #001d2544;
+  border-radius: 25px;
+  background: linear-gradient(130deg, #4e9c8d, #1e5465);
+}
+.nv-shop-welcome-art > svg:nth-child(2) {
+  position: absolute;
+  top: -5px;
+  inset-inline-end: 0;
+  color: #d7baf0;
+}
+.nv-shop-welcome-art > svg:last-child {
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 20px;
+  color: #fff;
+  background: #398e7a;
+  border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+}
+.nv-shop-account-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+.nv-shop-account-stats article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--nv-line);
+  border-radius: 20px;
+  background: var(--nv-surface);
+  overflow: hidden;
+}
+.nv-shop-account-stats article:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: #497acc;
+}
+.nv-shop-account-stats article:nth-child(2):before {
+  background: #d7a152;
+}
+.nv-shop-account-stats article:nth-child(3):before {
+  background: #4d9e8c;
+}
+.nv-shop-account-stats svg {
+  color: #6692c2;
+}
+.nv-shop-account-stats span {
+  font-size: 11px;
+  color: var(--nv-muted);
+}
+.nv-shop-account-stats strong {
+  font-size: 20px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+.nv-shop-account-card {
+  padding: 28px;
+  background: var(--nv-surface);
+  border: 1px solid var(--nv-line);
+  border-radius: 22px;
+  margin-bottom: 25px;
+}
+.nv-shop-account-card > h2,
+.nv-shop-card-title h2 {
+  font-size: 19px;
+  font-weight: 800;
+}
+.nv-shop-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.nv-shop-card-title > button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #487eae;
+  font-size: 11px;
+}
+.nv-shop-order {
+  border: 1px solid var(--nv-line);
+  border-radius: 14px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+.nv-shop-order summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  cursor: pointer;
+}
+.nv-shop-order summary::-webkit-details-marker {
+  display: none;
+}
+.nv-shop-order summary strong {
+  display: block;
+  font-size: 12px;
+}
+.nv-shop-order summary small {
+  display: block;
+  font-size: 10px;
+  color: var(--nv-muted);
+  margin-top: 7px;
+}
+.nv-shop-order-icon {
+  background: #edf3fb;
+  color: #638bb8;
+  border-radius: 11px;
+  padding: 11px;
+  flex-shrink: 0;
+}
+.nv-shop-order-status {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #fff2dd;
+  color: #a17027;
+  margin-inline-start: auto;
+  white-space: nowrap;
+}
+.nv-status-paid,
+.nv-status-delivered {
+  color: #207d63;
+  background: #e1f5eb;
+}
+.nv-status-cancelled {
+  background: #edf1f5;
+  color: #7e8e9f;
+}
+.nv-status-shipped {
+  background: #e4efff;
+  color: #477dbb;
+}
+.nv-shop-order-body {
+  padding: 22px;
+  border-top: 1px solid var(--nv-line);
+  background: var(--nv-wash);
+}
+.nv-shop-order-body > p {
+  font-size: 12px;
+  line-height: 2;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.nv-shop-order-body dl {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-block: 20px;
+}
+.nv-shop-order-body dt {
+  font-size: 10px;
+  color: var(--nv-muted);
+}
+.nv-shop-order-body dd {
+  font-size: 12px;
+  margin-top: 7px;
+  font-weight: 650;
+}
+.nv-shop-order-address {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+}
+.nv-shop-order-body .nv-button-row {
+  font-size: 11px;
+  margin-top: 20px;
+}
+.nv-shop-cancel {
+  color: #ae6874;
+}
+.nv-shop-account-empty {
+  padding: 45px 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  color: var(--nv-muted);
+}
+.nv-shop-account-empty > svg {
+  color: #a0b6c8;
+}
+.nv-shop-account-empty h3 {
+  font-size: 18px;
+  font-weight: 750;
+  color: var(--nv-ink);
+}
+.nv-shop-account-empty p {
+  font-size: 12px;
+  max-width: 480px;
+  line-height: 2;
+}
+.nv-shop-account-empty .nv-button {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.nv-shop-account-form {
+  max-width: 850px;
+}
+.nv-shop-account-form > p {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--nv-muted);
+  margin-block: 15px 22px;
+}
+.nv-shop-account-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 650;
+}
+.nv-shop-account-form input,
+.nv-shop-account-form select,
+.nv-shop-account-form textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--nv-line);
+  border-radius: 11px;
+  padding: 13px;
+  margin-block: 10px 20px;
+  background: var(--nv-surface);
+  font-size: 13px;
+  font-weight: 400;
+}
+.nv-shop-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.nv-shop-address-form {
+  border: 1px dashed #a9bed5;
+  padding: 23px;
+  border-radius: 17px;
+  margin-bottom: 25px;
+  background: var(--nv-wash);
+}
+.nv-shop-address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.nv-shop-address-grid > article {
+  border: 1px solid var(--nv-line);
+  border-radius: 17px;
+  padding: 23px;
+}
+.nv-shop-address-grid h3 {
+  font-size: 15px;
+  font-weight: 750;
+  margin-block: 15px 10px;
+}
+.nv-shop-address-grid > article > svg {
+  color: #5b9d87;
+}
+.nv-shop-address-grid strong {
+  font-size: 12px;
+}
+.nv-shop-address-grid p {
+  font-size: 12px;
+  line-height: 2;
+  margin-block: 12px;
+  color: var(--nv-muted);
+  overflow-wrap: anywhere;
+}
+.nv-shop-address-grid small {
+  font-size: 11px;
+  color: var(--nv-muted);
+}
+.nv-shop-address-grid article > div {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid var(--nv-line);
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 11px;
+  color: #4d83b9;
+}
+.nv-shop-address-grid button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nv-shop-address-grid button:last-child {
+  color: #b36a77;
+}
+.nv-shop-wallet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 23px;
+}
+.nv-shop-wallet-card > svg {
+  color: #4d9a85;
+}
+.nv-shop-wallet-card p {
+  font-size: 13px;
+  line-height: 2;
+  max-width: 700px;
+  color: var(--nv-muted);
+}
+.nv-shop-wallet-card > strong {
+  font-size: 28px;
+  font-weight: 800;
+}
+.nv-shop-wallet-card .nv-text-link {
+  font-size: 12px;
+}
+.nv-shop-saved-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-block: 20px;
+  border-bottom: 1px solid var(--nv-line);
+}
+.nv-shop-saved-row button {
+  margin-inline-start: auto;
+  color: #b46d77;
+}
+.nv-shop-account-error {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid #e2c49b;
+  border-radius: 13px;
+  background: #fff4e5;
+  color: #a16e35;
+  padding: 18px;
+  margin-bottom: 25px;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.nv-shop-account-error button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.nv-shop-account-message {
+  border: 1px solid #94c9b3;
+  border-radius: 12px;
+  background: #ecf8f1;
+  color: #2a7c61;
+  padding: 18px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.nv-shop-account-skeleton {
+  height: 300px;
+  border-radius: 22px;
+  background: linear-gradient(110deg, #eaf0f7, #f5f8fc, #eaf0f7);
+}
+.nv-selected-account-model {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  border: 1px solid #cbdedb;
+  border-radius: 23px;
+  padding: 30px;
+  background: linear-gradient(115deg, #eff8f4, #f4f7fc);
+  margin-block: 30px;
+}
+.nv-selected-account-model h2 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.nv-selected-account-model p {
+  max-width: 650px;
+  font-size: 13px;
+  line-height: 2;
+  color: var(--nv-muted);
+}
+.nv-selected-account-model > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.nv-selected-account-model .nv-button {
+  font-size: 12px;
+}
+.nv-selected-account-model .nv-text-link {
+  font-size: 11px;
+  text-align: center;
+  justify-content: center;
+}
+html.dark .nv-shop-account {
+  background: #0b1627;
+  --nv-surface: #14243b;
+}
+html.dark .nv-shop-account-preview {
+  background: #342b1f;
+  color: #d1bc91;
+}
+html.dark .nv-shop-identity > span {
+  background: #21463d;
+  color: #9cdac6;
+}
+html.dark .nv-shop-account-sidebar nav > button {
+  color: #adbed4;
+}
+html.dark .nv-shop-account-sidebar nav > button[aria-current="page"] {
+  background: linear-gradient(110deg, #1a433c, #183638);
+  color: #a1d9c6;
+}
+html.dark .nv-shop-account-browse {
+  color: #9ad2c2;
+}
+html.dark .nv-shop-account-logo img {
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+}
+html.dark .nv-shop-account-title .nv-back-button {
+  background: #14243b;
+}
+html.dark .nv-shop-order-icon {
+  background: #223c5c;
+  color: #94bce7;
+}
+html.dark .nv-shop-order-status {
+  background: #423622;
+  color: #dbc18c;
+}
+html.dark .nv-status-cancelled {
+  background: #29374a;
+  color: #a7b7cb;
+}
+html.dark .nv-shop-account-error {
+  background: #392d20;
+  border-color: #675138;
+  color: #e0bd88;
+}
+html.dark .nv-shop-account-message {
+  background: #183c2f;
+  border-color: #397b61;
+  color: #9dd7b9;
+}
+html.dark .nv-shop-account-skeleton {
+  background: #182b44;
+}
+html.dark .nv-selected-account-model {
+  background: linear-gradient(110deg, #163c35, #182d48);
+  border-color: #3c5a62;
+}
+@media (max-width: 1100px) {
+  .nv-shop-account-layout {
+    grid-template-columns: 215px minmax(0, 1fr);
+    gap: 22px;
+    padding: 22px;
+  }
+  .nv-shop-account-title h1 {
+    font-size: 25px;
+  }
+  .nv-shop-account-title {
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .nv-shop-account-welcome {
+    padding: 30px;
+    gap: 15px;
+  }
+  .nv-shop-account-welcome h2 {
+    font-size: 25px;
+  }
+  .nv-shop-account-stats article {
+    padding: 20px;
+  }
+  .nv-shop-account-stats strong {
+    font-size: 17px;
+  }
+  .nv-shop-address-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .nv-shop-account-header {
+    padding: 17px 20px;
+    gap: 15px;
+  }
+  .nv-shop-account-header > div {
+    gap: 8px;
+  }
+  .nv-shop-account-logo > span {
+    display: none;
+  }
+  .nv-shop-account-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .nv-shop-account-sidebar {
+    position: static;
+    width: 100%;
+    padding: 10px;
+    border-radius: 16px;
+    overflow: visible;
+    max-height: none;
+  }
+  .nv-shop-identity,
+  .nv-shop-space-note,
+  .nv-shop-signout {
+    display: none;
+  }
+  .nv-shop-account-sidebar nav {
+    flex-direction: row;
+    margin: 0;
+    overflow-x: auto;
+    overscroll-behavior: contain;
+    gap: 5px;
+    padding-bottom: 4px;
+  }
+  .nv-shop-account-sidebar nav > button {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 10px 13px;
+    min-height: 44px;
+    font-size: 11px;
+  }
+  .nv-shop-account-sidebar nav > button svg {
+    width: 17px;
+  }
+  .nv-shop-account-main {
+    width: 100%;
+    padding-top: 0;
+  }
+  .nv-shop-account-title {
+    gap: 15px;
+  }
+  .nv-shop-account-title h1 {
+    font-size: 23px;
+  }
+  .nv-shop-account-title p {
+    font-size: 11px;
+  }
+  .nv-shop-account-welcome {
+    padding: 25px;
+    grid-template-columns: 1.5fr 0.7fr;
+  }
+  .nv-shop-account-welcome h2 {
+    font-size: 23px;
+  }
+  .nv-shop-welcome-art {
+    height: 120px;
+  }
+  .nv-shop-welcome-art > svg:first-child {
+    width: 85px;
+    height: 85px;
+    padding: 15px;
+  }
+  .nv-shop-welcome-art > svg:nth-child(2) {
+    width: 26px;
+    top: -5px;
+  }
+  .nv-shop-welcome-art > svg:last-child {
+    width: 28px;
+    height: 28px;
+    inset-inline-start: -5px;
+  }
+  .nv-shop-account-stats {
+    gap: 12px;
+  }
+  .nv-shop-account-stats article {
+    padding: 18px 15px;
+  }
+  .nv-shop-account-stats strong {
+    font-size: 16px;
+  }
+  .nv-shop-account-stats span {
+    font-size: 10px;
+  }
+  .nv-selected-account-model {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+  }
+  .nv-selected-account-model > div:last-child {
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .nv-shop-account-header {
+    padding: 15px 16px;
+    gap: 10px;
+  }
+  .nv-shop-account-header > div {
+    gap: 4px;
+  }
+  .nv-shop-account-logo img {
+    width: 103px;
+  }
+  .nv-shop-account-browse {
+    font-size: 10px;
+    gap: 5px;
+  }
+  .nv-shop-account-header .nv-theme-toggle {
+    width: 30px;
+    height: 30px;
+  }
+  .nv-shop-account-layout {
+    padding: 15px;
+    gap: 17px;
+  }
+  .nv-shop-account-title {
+    margin-bottom: 22px;
+  }
+  .nv-shop-account-title > .nv-back-button {
+    font-size: 10px;
+  }
+  .nv-shop-account-title h1 {
+    font-size: 22px;
+  }
+  .nv-shop-account-title p {
+    line-height: 2;
+  }
+  .nv-shop-account-welcome {
+    display: block;
+    padding: 25px;
+  }
+  .nv-shop-account-welcome h2 {
+    font-size: 23px;
+  }
+  .nv-shop-account-welcome p {
+    font-size: 11px;
+  }
+  .nv-shop-welcome-art {
+    display: none;
+  }
+  .nv-shop-account-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .nv-shop-account-stats article:last-child {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 25px minmax(0, 1fr);
+    gap: 10px 15px;
+  }
+  .nv-shop-account-stats article:last-child strong {
+    grid-column: 2;
+  }
+  .nv-shop-account-card {
+    padding: 20px 17px;
+    border-radius: 18px;
+  }
+  .nv-shop-card-title h2,
+  .nv-shop-account-card > h2 {
+    font-size: 17px;
+  }
+  .nv-shop-card-title {
+    gap: 12px;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .nv-shop-order summary {
+    padding: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .nv-shop-order-icon {
+    padding: 9px;
+  }
+  .nv-shop-order-icon svg {
+    width: 18px;
+  }
+  .nv-shop-order summary > svg {
+    display: none;
+  }
+  .nv-shop-order-status {
+    font-size: 9px;
+    padding: 4px 7px;
+  }
+  .nv-shop-order summary strong {
+    font-size: 11px;
+  }
+  .nv-shop-order-body {
+    padding: 17px;
+  }
+  .nv-shop-order-body > p {
+    font-size: 11px;
+  }
+  .nv-shop-order-body .nv-button-row {
+    font-size: 10px;
+    gap: 15px;
+  }
+  .nv-shop-account-empty {
+    padding: 30px 12px;
+  }
+  .nv-shop-account-empty h3 {
+    font-size: 16px;
+  }
+  .nv-shop-account-empty p {
+    font-size: 11px;
+  }
+  .nv-shop-account-empty .nv-button {
+    font-size: 11px;
+  }
+  .nv-shop-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .nv-shop-account-form input,
+  .nv-shop-account-form textarea,
+  .nv-shop-account-form select {
+    font-size: 16px;
+  }
+  .nv-shop-account-form label {
+    font-size: 11px;
+  }
+  .nv-shop-account-form > p {
+    font-size: 11px;
+  }
+  .nv-shop-address-form {
+    padding: 17px;
+  }
+  .nv-shop-address-grid > article {
+    padding: 20px;
+  }
+  .nv-shop-wallet-card p {
+    font-size: 12px;
+  }
+  .nv-shop-wallet-card > strong {
+    font-size: 24px;
+  }
+  .nv-shop-account-error {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    font-size: 11px;
+  }
+  .nv-shop-account-preview {
+    font-size: 10px;
+    gap: 10px;
+    line-height: 1.9;
+    align-items: start;
+    justify-content: start;
+  }
+  .nv-selected-account-model {
+    padding: 24px;
+  }
+  .nv-selected-account-model h2 {
+    font-size: 22px;
+  }
+  .nv-selected-account-model p {
+    font-size: 12px;
+  }
+  .nv-selected-account-model > div:last-child {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nv-selected-account-model .nv-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 360px) {
+  .nv-shop-account-header .nv-shop-account-browse {
+    display: none;
+  }
+  .nv-shop-account-header > div {
+    gap: 2px;
+  }
+  .nv-shop-account-header .nv-shop-account-logo img {
+    width: 96px;
+  }
+  .nv-shop-account-title > .nv-back-button {
+    padding-inline: 10px;
+  }
+}
+
+.nv-shop-header-signout {
+  display: none;
+  color: #bc7d87;
+}
+@media (max-width: 800px) {
+  .nv-shop-header-signout {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 32px;
+  }
+}

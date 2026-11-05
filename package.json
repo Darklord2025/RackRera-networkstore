@@ -1,0 +1,33 @@
+{
+  "name": "rackvira",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "test": "node --import ./tests/register.mjs --test tests/shop.test.mjs",
+    "typecheck:edge": "tsc --noEmit -p tsconfig.edge.json"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.75.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=22.15"
+  }
+}

@@ -1,0 +1,328 @@
+html.dark .nv-site {
+  --nv-ink: #e6eefb;
+  --nv-muted: #9caec7;
+  --nv-line: #2b3c54;
+  --nv-blue: #88b4ff;
+  --nv-wash: #101e32;
+  --nv-surface: #14243b;
+  background: #0b1627;
+  color: var(--nv-ink);
+  color-scheme: dark;
+}
+html.dark .nv-shop-shell {
+  --nv-surface: #14243b;
+}
+html.dark
+  .nv-site
+  :is(
+    .nv-public-header,
+    .nv-mega,
+    .nv-mobile-navigation,
+    .nv-domain-strip,
+    .nv-back-button,
+    .nv-domain-form,
+    .nv-order-summary,
+    .nv-config-form,
+    .nv-feature,
+    .nv-info-card,
+    .nv-service-card,
+    .nv-plan-card,
+    .nv-pricing-card,
+    .nv-addons-grid > article,
+    .nv-location-card,
+    .nv-article,
+    .nv-filter-buttons button,
+    .nv-variant,
+    .nv-knowledge-tools,
+    .nv-contact-grid > article,
+    .nv-long-copy,
+    .nv-family-picker > button
+  ) {
+  background: var(--nv-surface);
+  border-color: var(--nv-line);
+  color: var(--nv-ink);
+}
+html.dark
+  .nv-site
+  :is(
+    .nv-topline,
+    .nv-mega-bottom,
+    .nv-section-soft,
+    .nv-departments,
+    .nv-footer,
+    .nv-domain-form,
+    .nv-footer-bottom
+  ) {
+  background: #0f1d31;
+  border-color: var(--nv-line);
+  color: var(--nv-muted);
+}
+html.dark .nv-site :is(input, select, textarea) {
+  background: #0e1b2d;
+  color: #e2edfc;
+  border-color: #354965;
+}
+html.dark
+  .nv-site
+  :is(
+    .nv-domain-title,
+    .nv-section-heading h2,
+    .nv-long-copy h2,
+    .nv-plan-price,
+    .nv-price,
+    .nv-variant,
+    .nv-nav-item > button,
+    .nv-desktop-nav > a
+  ) {
+  color: var(--nv-ink);
+}
+html.dark
+  .nv-site
+  :is(
+    .text-slate-500,
+    .nv-info-card p,
+    .nv-feature p,
+    .nv-service-card p,
+    .nv-pricing-note,
+    .nv-article p,
+    .nv-price small
+  ) {
+  color: var(--nv-muted);
+}
+html.dark .nv-site :is(.nv-footer h3, .nv-footer h2) {
+  color: #e6eefb;
+}
+html.dark .nv-site :is(.nv-brand img, .nv-footer-logo img) {
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+}
+html.dark .nv-page-hero {
+  background:
+    radial-gradient(ellipse at 15% 50%, #183559, transparent 50%), #101f35;
+}
+html.dark .nv-page-hero p {
+  color: #a9bedb;
+}
+html.dark .nv-page-hero:after {
+  border-color: #8cbbff07;
+  box-shadow: 0 0 0 45px #8cbbff04;
+}
+html.dark .nv-page-illustration {
+  opacity: 0.55;
+}
+html.dark .nv-department,
+html.dark .nv-install {
+  background: #14243b;
+  border-color: var(--nv-line);
+}
+html.dark .nv-install-help {
+  border-color: var(--nv-line);
+}
+html.dark .nv-install-icon {
+  background: #1c3554;
+  color: #88b5f5;
+}
+html.dark .nv-workload-card {
+  background: #14263f;
+  border-color: var(--nv-line);
+}
+html.dark .nv-workload-app {
+  background: #23213e;
+}
+html.dark .nv-workload-power {
+  background: #112f32;
+}
+html.dark .nv-workload-card > p {
+  color: #adbbcf;
+}
+html.dark .nv-site .nv-button-outline {
+  background: #14243b;
+  border-color: #415778;
+  color: #b9d3ff;
+}
+html.dark
+  .nv-site
+  .nv-button:not(.nv-button-outline):not(.nv-button-white):not(
+    .nv-button-ghost
+  ) {
+  color: white;
+  background: #3168d5;
+  border-color: #3168d5;
+}
+html.dark .nv-site .nv-text-link {
+  color: #8cb8fc;
+}
+html.dark .nv-site .nv-icon {
+  background: #1c3554;
+  color: #9bc7ff;
+}
+html.dark .nv-site .nv-icon.nv-teal {
+  background: #183d3c;
+  color: #6bd1b9;
+}
+html.dark .nv-site .nv-icon.nv-violet {
+  background: #302449;
+  color: #bda1f2;
+}
+html.dark .nv-site .nv-icon.nv-orange {
+  background: #3e3122;
+  color: #edbc75;
+}
+html.dark .nv-country-choices > button[aria-pressed="true"],
+html.dark .nv-region-tabs > button[aria-pressed="true"] {
+  background: #203b61;
+  color: #acd0ff;
+  border-color: #5d85c4;
+}
+html.dark .nv-region-tabs small {
+  background: #253e5e;
+  color: #b8cce5;
+}
+html.dark .nv-choice-empty {
+  background: radial-gradient(ellipse, #16335750, transparent 70%);
+}
+html.dark .nv-location-result {
+  background: linear-gradient(120deg, #192f4f, #152c36);
+  border-color: #395777;
+}
+html.dark .nv-network-number {
+  color: #8ab8f611;
+}
+html.dark .nv-mobile-dock {
+  background: #101f35ee;
+  border-color: #304762;
+}
+html.dark .nv-mobile-dock a {
+  color: #8da4c4;
+}
+html.dark .nv-mobile-dock a[aria-current="page"] {
+  color: #a3c9ff;
+  background: #213c60;
+}
+html.dark .nv-shop-preview-note {
+  background: #332a1d;
+  color: #d8bd8a;
+  border-color: #5b4827;
+}
+html.dark .nv-shop-preview-note > span {
+  background: #40331f;
+  border-color: #715933;
+  color: #f5d99f;
+}
+html.dark .nv-store-hero {
+  background:
+    radial-gradient(ellipse at 20% 50%, #1c4541, transparent 55%), #102b30;
+}
+html.dark .nv-store-hero h1 em {
+  color: #7bd5bc;
+}
+html.dark .nv-store-hero p {
+  color: #a1c8bd;
+}
+html.dark .nv-store-floating {
+  background: #173239d9;
+  color: #a8dccd;
+  border-color: #34525a;
+}
+html.dark .nv-product-art-button {
+  background: linear-gradient(130deg, #1b2e46, #13253c);
+}
+html.dark .nv-equipment-art {
+  background: radial-gradient(ellipse, #3a5d8540, transparent 65%);
+}
+html.dark .nv-favorite {
+  background: #14253dd9;
+  color: #a9bbd4;
+  border-color: #41516d;
+}
+html.dark .nv-favorite[aria-pressed="true"] {
+  color: #f393b6;
+}
+html.dark .nv-equipment-categories > button[aria-pressed="true"] {
+  background: #284a64;
+  border-color: #47718e;
+}
+html.dark .nv-equipment-actions > .nv-button {
+  background: #213d63 !important;
+  color: #bad5ff !important;
+  border-color: #34567f !important;
+}
+html.dark .nv-equipment-summary > p {
+  background: #342c1f;
+  color: #d9bf8b;
+}
+html.dark .nv-account-models > button[aria-pressed="true"] {
+  background: #203956;
+  border-color: #6a97c7;
+}
+html.dark .nv-account-models small {
+  background: #1e493e;
+  color: #8edfc2;
+}
+html.dark .nv-account-models strong {
+  color: #9bc5f8;
+}
+html.dark .nv-payment-preview {
+  background: #18382f;
+  color: #b0d4c2;
+}
+html.dark .nv-shop-cart-button {
+  background: #213c5c;
+  color: #b5d4ff;
+}
+html.dark
+  .nv-site
+  :is(
+    .nv-plan,
+    .nv-hosting-inputs,
+    .nv-search,
+    .nv-faq,
+    .nv-downloads > a,
+    .nv-resource-row,
+    .nv-blog-search,
+    .nv-article-body
+  ) {
+  background: var(--nv-surface);
+  border-color: var(--nv-line);
+  color: var(--nv-ink);
+}
+html.dark .nv-plan-featured {
+  background: #1b3152;
+  border-color: #769fdf;
+}
+html.dark .nv-plan h3,
+html.dark .nv-plan li,
+html.dark .nv-plan > p,
+html.dark .nv-faq summary {
+  color: var(--nv-ink);
+}
+html.dark .nv-plan-label {
+  background: #2b4b73;
+  color: #c5dfff;
+}
+html.dark .nv-reference-note {
+  background: #192b44;
+  border-color: #39506f;
+  color: #b1c6e2;
+}
+html.dark .nv-tabs {
+  background: #14243b;
+}
+html.dark .nv-tabs button {
+  color: #b3c5df;
+}
+html.dark .nv-tabs button[aria-selected="true"] {
+  background: #315f9e;
+  color: #fff;
+}
+html.dark .nv-os-tags span {
+  background: #182c47;
+  border-color: #324a6a;
+  color: #b3c7e2;
+}
+html.dark .nv-learn-tabs a {
+  background: #182c47;
+  color: #bdd2ee;
+  border-color: #324a6a;
+}
